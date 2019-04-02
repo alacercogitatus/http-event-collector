@@ -52,10 +52,10 @@ module.exports = function(RED) {
                 //msgMetaData : msg,
                 // Metadata
                     metadata: {
-                        source: this.mySource,
-                        sourcetype: this.mySourcetype,
-                        index: this.myIndex,
-                        host: this.myHost,
+                        source: myMessage.payload.source || this.mySource,
+                        sourcetype: myMessage.payload.sourcetype || this.mySourcetype,
+                        index: myMessage.payload.index || this.myIndex,
+                        host: myMessage.payload.host || this.myHost,
                     },
                     // Severity is also optional
                 severity: "info"

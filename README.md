@@ -1,3 +1,7 @@
+# Headline
+
+This is a fork from : https://github.com/gdziuba/http-event-collector.git
+It allows the sourcetype, source, host, and index to be configured dynamically via msg.payload variables.
 ## Synopsis
 
 The purpose of this project is to allow node-red to publish a node-red payload to Splunk's HTTP Event Collector. 
@@ -13,13 +17,13 @@ The easiest way to install is through the Node-Red Palette Manager that can be f
 ### Manual install with npm
 
 ```sh
-npm install -g node-red-contrib-http-event-collector
+npm install -g node-red-contrib-dynamic-http-event-collector
 ```
 ### Install from source
 From github:
 Navigate to the your home directory on linux is is ~/.node-red/node-modules
 ```sh
-git clone https://github.com/gdziuba/http-event-collector.git
+git clone https://github.com/alacercogitatus/http-event-collector.git
 ```
 ```sh
 cd http-event-collector

@@ -19,12 +19,12 @@ module.exports = function(RED) {
         this.on('input', function(msg) {
 
             var dims = null;
-            var hName = this.myHostname
+            var hName = this.myHostname;
             var re = /(https:\/\/|http:\/\/)/;
             hName = hName.replace(re,'');
             re = /(www)/;
             hName = hName.replace(re,'');
-            console.log("hostname:",hName)
+            console.log("hostname:",hName);
 
             try{
                 myMessage = JSON.parse(msg.payload)
