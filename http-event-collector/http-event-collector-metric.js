@@ -114,5 +114,5 @@ module.exports = function(RED) {
 
         });
     }
-    RED.nodes.registerType("splunk-http-event-collector-metric",HTTPEventCollector);
+    RED.nodes.registerType("dynamic-splunk-http-event-collector-metric",HTTPEventCollector);
 };
