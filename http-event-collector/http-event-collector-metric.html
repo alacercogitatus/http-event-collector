@@ -1,9 +1,9 @@
 <script type="text/javascript">
     RED.nodes.registerType('dynamic-splunk-http-event-collector-metric',{
-        category: 'splunk',
+        category: 'output',
         color: '#009D2F',
         defaults: {
-            name: {value:""},
+            name: {value:"splunk-hec-metric"},
             inputToken: {value:"", required:true},
             inputHostname: {value:"", required:true},
             inputSource: {value:"", required:false},
